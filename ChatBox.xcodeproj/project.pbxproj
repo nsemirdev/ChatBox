@@ -9,21 +9,21 @@
 /* Begin PBXBuildFile section */
 		2DFE54E229A9496F00C61020 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFE54E129A9496F00C61020 /* AppDelegate.swift */; };
 		2DFE54E429A9496F00C61020 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFE54E329A9496F00C61020 /* SceneDelegate.swift */; };
-		2DFE54E629A9496F00C61020 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFE54E529A9496F00C61020 /* ViewController.swift */; };
-		2DFE54E929A9496F00C61020 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DFE54E729A9496F00C61020 /* Main.storyboard */; };
 		2DFE54EB29A9497000C61020 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DFE54EA29A9497000C61020 /* Assets.xcassets */; };
 		2DFE54EE29A9497000C61020 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DFE54EC29A9497000C61020 /* LaunchScreen.storyboard */; };
+		2DFE54FB29A94B6A00C61020 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFE54F929A94B6A00C61020 /* OnboardingViewController.swift */; };
+		2DFE54FC29A94B6A00C61020 /* OnboardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DFE54FA29A94B6A00C61020 /* OnboardingViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2DFE54DE29A9496F00C61020 /* ChatBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DFE54E129A9496F00C61020 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2DFE54E329A9496F00C61020 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2DFE54E529A9496F00C61020 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2DFE54E829A9496F00C61020 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2DFE54EA29A9497000C61020 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2DFE54ED29A9497000C61020 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2DFE54EF29A9497000C61020 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DFE54F929A94B6A00C61020 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		2DFE54FA29A94B6A00C61020 /* OnboardingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +56,47 @@
 		2DFE54E029A9496F00C61020 /* ChatBox */ = {
 			isa = PBXGroup;
 			children = (
+				2DFE54F629A94AE400C61020 /* Resources */,
+				2DFE54F529A94ADD00C61020 /* App */,
+				2DFE54F729A94B5200C61020 /* Scenes */,
+			);
+			path = ChatBox;
+			sourceTree = "<group>";
+		};
+		2DFE54F529A94ADD00C61020 /* App */ = {
+			isa = PBXGroup;
+			children = (
 				2DFE54E129A9496F00C61020 /* AppDelegate.swift */,
 				2DFE54E329A9496F00C61020 /* SceneDelegate.swift */,
-				2DFE54E529A9496F00C61020 /* ViewController.swift */,
-				2DFE54E729A9496F00C61020 /* Main.storyboard */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		2DFE54F629A94AE400C61020 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				2DFE54EA29A9497000C61020 /* Assets.xcassets */,
 				2DFE54EC29A9497000C61020 /* LaunchScreen.storyboard */,
 				2DFE54EF29A9497000C61020 /* Info.plist */,
 			);
-			path = ChatBox;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2DFE54F729A94B5200C61020 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				2DFE54F829A94B5900C61020 /* Onboarding */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		2DFE54F829A94B5900C61020 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				2DFE54F929A94B6A00C61020 /* OnboardingViewController.swift */,
+				2DFE54FA29A94B6A00C61020 /* OnboardingViewController.xib */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +159,7 @@
 			files = (
 				2DFE54EE29A9497000C61020 /* LaunchScreen.storyboard in Resources */,
 				2DFE54EB29A9497000C61020 /* Assets.xcassets in Resources */,
-				2DFE54E929A9496F00C61020 /* Main.storyboard in Resources */,
+				2DFE54FC29A94B6A00C61020 /* OnboardingViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +170,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DFE54E629A9496F00C61020 /* ViewController.swift in Sources */,
 				2DFE54E229A9496F00C61020 /* AppDelegate.swift in Sources */,
+				2DFE54FB29A94B6A00C61020 /* OnboardingViewController.swift in Sources */,
 				2DFE54E429A9496F00C61020 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +179,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		2DFE54E729A9496F00C61020 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2DFE54E829A9496F00C61020 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		2DFE54EC29A9497000C61020 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -289,10 +313,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = HG8VJQPKXZ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ChatBox/Info.plist;
+				INFOPLIST_FILE = ChatBox/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -317,10 +340,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = HG8VJQPKXZ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ChatBox/Info.plist;
+				INFOPLIST_FILE = ChatBox/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
